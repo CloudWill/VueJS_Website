@@ -1,9 +1,7 @@
 <template>
 
     <Navigation></Navigation>
-    <div>
 
-    </div>
 
 </template>
 

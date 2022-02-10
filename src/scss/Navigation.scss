@@ -1,0 +1,42 @@
+.page-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header ul {
+    display: flex;
+    order: 1;
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 550px) {
+    .page-header ul {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .page-header .cta-contact {
+        order: 1;
+    }
+}
+.logo {
+    background: green;
+    width: 30%;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+.contact{
+    background: blue;
+}
+
+.navigation{
+    background: yellow;
+}

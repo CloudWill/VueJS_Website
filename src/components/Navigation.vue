@@ -2,29 +2,24 @@
 </template>
 
 <script>
-    import { useI18n } from 'vue-i18n'
     export default {
-        name: 'MainNavigation',
+        name: 'Navigation',
         data() {
             return {
                 showMenu: false,
+                phoneNumber: process.env.VUE_APP_PHONE_NUMBER,
+                email: process.env.VUE_APP_EMAIL,
+                facebook: process.env.VUE_APP_FACEBOOK,
+                twitter: process.env.VUE_APP_TWITTER,
+                instagram: process.env.VUE_APP_INSTAGRAM
+
             };
-        },
-        setup() {
-            const { t } = useI18n({
-                inheritLocale: true,
-                useScope: 'local'
-            })
-
-            // Something todo ..
-
-            return { t }
         }
 
     };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-    @import '../scss/Navigation'
+<style lang="scss">
+    @import '../scss/Navigation';
 </style>

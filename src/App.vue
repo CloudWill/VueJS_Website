@@ -13,10 +13,11 @@
                     <router-link tag="li" class="nav__item" :to="{ name: 'Contact Us' }" @click="click('Contact')">Contact Us</router-link>
                 </ul>
             </nav>
-         
+            <div class="contact">
+                <div class="phone"><i class="fas fa-phone-square-alt"></i>&nbsp;{{ phoneNumber }}</div>
+                <div class="email"><i class="fas fa-envelope"></i>&nbsp;{{ email }}</div>
+            </div>
         </div>
-
-
         <nav class="sticky_nav">
             <ul class="sticky_nav__list">
                 <router-link tag="li" class="sticky_nav__item" :to="{ name: 'Home' }" @click="click('Home')">Home</router-link>
@@ -31,20 +32,9 @@
             </div>
         </nav>
 
-
-        <div class="hero">
-            <h1>Position Sticky Subnav</h1>
-        </div>
-
-
         <main class="page-main">
             <section class="section">
-                <div class="hero">
-                    <h1>Position Sticky Subnav</h1>
-                </div>
-            </section>
-            <section class="section">
-                <h2>A Section</h2>
+               
                 <router-view />
             </section>
             <section class="section">
@@ -59,13 +49,13 @@
             </small>
             <ul>
                 Social: &nbsp;
-                <a :href="facebook"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
-                <a :href="twitter"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
-                <a :href="instagram"><i class="fab fa-instagram-square"></i></a>
+                <a :href="facebook" target="_blank"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+                <a :href="twitter" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+                <a :href="instagram" target="_blank"><i class="fab fa-instagram-square"></i></a>
                 &nbsp;&nbsp;
-                <a :href="wechat"><i class="fab fa-weixin"></i></a>
+                <a :href="wechat" target="_blank"><i class="fab fa-weixin"></i></a>
                 &nbsp;&nbsp;
-                <a :href="whatsapp"><i class="fab fa-whatsapp-square"></i></a>
+                <a :href="whatsapp" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
 
             </ul>
         </footer>

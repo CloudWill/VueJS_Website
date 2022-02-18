@@ -29,6 +29,9 @@
     }
 }
 
+html, body {
+    height: 100%;
+}
 
 .wrapper {
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -38,6 +41,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    height: 100%;
     background: #0B1156;
     justify-content: flex-start
 }
@@ -49,7 +53,6 @@
 .page-main {
     flex-grow: 1;
 }
-
 /* variables */
 :root {
     --main-white-color: white;
@@ -91,66 +94,8 @@
     width: 100%;
 }
 
-.nav_title {    
-    display: flex;
-    width: 15%;   
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-}
-
-.contact {
-    display: flex;
-    text-align: right;
-
-    .phone {
-        align-content: end;
-        padding: 8px;
-    }
-
-    .email {
-        align-content: end;
-        padding: 8px;
-    }
-}
-// DEMO LAYOUT CODE
-.sticky_nav {
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    top: 0;
-    background: #0B1156;
 
 
-    a.router-link-active {
-        background: #32366C;
-        padding: 15px;
-    }
-
-    &__item {
-        display: inline-block;
-        padding: 15px;
-        color: white;
-        text-decoration: none;
-    }
-}
-.nav {
-    a.router-link-active {
-        background: #32366C;
-        padding: 15px;
-    }
-
-    &__item {
-        display: inline-block;
-        padding: 15px;
-        color: white;
-        text-decoration: none;
-    }
-}
 
 
 .section {

@@ -1,42 +1,63 @@
-.page-header nav {
+
+.nav_title {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.page-header ul {
-    display: flex;
-    order: 1;
-    width: 100%;
-    margin-top: 15px;
-}
-
-@media screen and (min-width: 550px) {
-    .page-header ul {
-        width: auto;
-        margin-top: 0;
-    }
-
-    .page-header .cta-contact {
-        order: 1;
-    }
-}
-.logo {
-    background: green;
-    width: 30%;
+    width: 15%;
 
     img {
-        max-width: 100%;
-        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }
 
+.contact {
+    display: flex;
+    text-align: right;
 
-.contact{
-    background: blue;
+    .phone {
+        align-content: end;
+        padding: 8px;
+    }
+
+    .email {
+        align-content: end;
+        padding: 8px;
+    }
+}
+// DEMO LAYOUT CODE
+.sticky_nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    top: 0;
+    background: #0B1156;
+
+
+    a.router-link-active {
+        background: #32366C;
+        padding: 15px;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
 }
 
-.navigation{
-    background: yellow;
+.nav {
+    a.router-link-active {
+        background: #32366C;
+        padding: 15px;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
 }

@@ -1,34 +1,30 @@
 <div class="page-header">
-
-
-    <nav>
-        <div class="logo">
-            <a href="#" @click="goHome()">
-                <img :src="require('../assets/img/generic_lawn_logo.png')" />
-            </a>
-        </div>
-        <div class="navigation">
-            <router-link :to="{ name: 'Home' }">Home</router-link>
-            <router-link :to="{ name: 'Services' }">Services</router-link>
-            <router-link :to="{ name: 'About Us' }">About Us</router-link>
-            <router-link :to="{ name: 'Contact Us' }">Contact Us</router-link>
-        </div>
-        <div class="contact">
-            <p><i class="fas fa-phone-square-alt"></i>{{ phoneNumber }}</p>
-
-            <p><i class="fas fa-envelope"></i>{{ email }}</p>
-            <p><i class="fab fa-facebook"></i>{{ facebook }}</p>
-            <p><i class="fab fa-twitter"></i>{{ twitter }}</p>
-        </div>
+    <div class="nav_title">
+        <router-link tag="li" class="sticky_nav__item" :to="{ name: 'Home' }" @click="click('Home')"><img :src="require('../assets/img/generic_lawn_logo.png')" /></router-link>
+    </div>
+    <nav class="nav">
+        <ul class="nav__list">
+            <router-link tag="li" class="sticky_nav__item" :to="{ name: 'Home' }" @click="click('Home')">Home</router-link>
+            <router-link tag="li" class="nav__item" :to="{ name: 'Services' }" @click="click('Services')">Services</router-link>
+            <router-link tag="li" class="nav__item" :to="{ name: 'About Us' }" @click="click('About')">About Us</router-link>
+            <router-link tag="li" class="nav__item" :to="{ name: 'Contact Us' }" @click="click('Contact')">Contact Us</router-link>
+        </ul>
     </nav>
-
-
-
-
-
-
-
-
-
-
+    <div class="contact">
+        <div class="phone"><i class="fas fa-phone-square-alt"></i>&nbsp;{{ phoneNumber }}</div>
+        <div class="email"><i class="fas fa-envelope"></i>&nbsp;{{ email }}</div>
+    </div>
 </div>
+<nav class="sticky_nav">
+    <ul class="sticky_nav__list">
+        <router-link tag="li" class="sticky_nav__item" :to="{ name: 'Home' }" @click="click('Home')">Home</router-link>
+        <router-link tag="li" class="sticky_nav__item" :to="{ name: 'Services' }" @click="click('Services')">Services</router-link>
+        <router-link tag="li" class="sticky_nav__item" :to="{ name: 'About Us' }" @click="click('About')">About Us</router-link>
+        <router-link tag="li" class="sticky_nav__item" :to="{ name: 'Contact Us' }" @click="click('Contact')">Contact Us</router-link>
+    </ul>
+
+    <div class="contact">
+        <div class="phone"><i class="fas fa-phone-square-alt"></i>&nbsp;{{ phoneNumber }}</div>
+        <div class="email"><i class="fas fa-envelope"></i>&nbsp;{{ email }}</div>
+    </div>
+</nav>

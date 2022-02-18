@@ -1,8 +1,8 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    padding-bottom: 100px;
+#canvasfor-googlemap img {
+    max-width: none !important;
+    background: none !important;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 #contact {
@@ -41,14 +41,12 @@ body {
 .form-control,
 textarea {
     max-width: 400px;
-    background-color: #000;
-    color: #fff;
+    color: black;
     letter-spacing: 1px;
 }
 
 .form-horizontal input[type=text]:focus, .form-horizontal input[type=email]:focus, .form-horizontal textarea:focus {
-    background: #32366C;
-    color: white;
+
 }
 
 
@@ -79,8 +77,8 @@ textarea {
 
 /* Begin Right Contact Page */
 .direct-contact-container {
-    max-width: 400px;
-    background: red;
+    display: flex;
+    justify-content: center;
 }
 
 /* Location, Phone, Email Section */
@@ -89,15 +87,11 @@ textarea {
     padding-right: 20px;
 }
 
-.list-item {
-    line-height: 4;
-    color: #aaa;
-}
-
 .contact-text {
     font: 300 18px 'Lato', sans-serif;
     letter-spacing: 1.9px;
     color: #bbb;
+    padding: 20px;
 }
 
 .place {
@@ -264,3 +258,4 @@ hr {
         width: 99%;
     }
 }
+

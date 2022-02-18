@@ -1,13 +1,15 @@
 <template>
     <div class="wrapper">
-        <navigation></navigation>
-        <main class="page-main">
-            <section class="section">
-                <router-view />
-            </section>
-        </main>
+        <div class="page-header">
+            <navigation></navigation>
+        </div>
+        <div class="page-main">
 
-        <foot></foot>
+            <router-view />
+        </div>
+        <div class="page-footer">
+            <foot></foot>
+        </div>
     </div>
 
 </template>
@@ -23,13 +25,16 @@
         },
         data() {
             return {
-       
+                showMenu: false,
+                phoneNumber: process.env.VUE_APP_PHONE_NUMBER,
+                email: process.env.VUE_APP_EMAIL,
+                facebook: process.env.VUE_APP_FACEBOOK,
+                twitter: process.env.VUE_APP_TWITTER,
+                instagram: process.env.VUE_APP_INSTAGRAM,
+                wechat: process.env.VUE_APP_INSTAGRAM,
+                whatsapp: process.env.VUE_APP_INSTAGRAM,
+                active_nav: null,
             };
-        },
-        methods: {
-            click: function (cl) {
-                console.log('clicking ', cl)
-            }
         }
     }
 </script>

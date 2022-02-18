@@ -1,16 +1,19 @@
-<footer class="page-footer">
-    <small>
-        @Copyright 2021. All rights reserved<!-- content here -->
-    </small>
-    <ul>
-        Social: &nbsp;
-        <a :href="facebook" target="_blank"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
-        <a :href="twitter" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
-        <a :href="instagram" target="_blank"><i class="fab fa-instagram-square"></i></a>
-        &nbsp;&nbsp;
-        <a :href="wechat" target="_blank"><i class="fab fa-weixin"></i></a>
-        &nbsp;&nbsp;
-        <a :href="whatsapp" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+<div>
 
-    </ul>
-</footer>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a :href="this.$parent.facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a :href="this.$parent.twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a :href="this.$parent.instagram" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                <a :href="this.$parent.wechat" target="_blank"><i class="fab fa-weixin"></i></a>
+                <a :href="this.$parent.whatsapp" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+        </div>
+        <small>
+            @Copyright 2021. All rights reserved<!-- content here -->
+        </small>
+    </footer>
+</div>

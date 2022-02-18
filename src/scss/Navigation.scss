@@ -10,42 +10,21 @@
         width: 100%;
     }
 }
+.navbar-toggler {
+    color: white;
+}
 
 .contact {
     display: flex;
-    text-align: right;
-
-    .phone {
-        align-content: end;
-        padding: 8px;
-    }
-
-    .email {
-        align-content: end;
-        padding: 8px;
+    justify-content: center;
+    padding: 10px;
+    .email{
+        padding-left: 20px;
     }
 }
-// DEMO LAYOUT CODE
-.sticky_nav {
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    top: 0;
-    background: #0B1156;
 
-
-    a.router-link-active {
-        background: #32366C;
-        padding: 15px;
-    }
-
-    &__item {
-        display: inline-block;
-        padding: 15px;
-        color: white;
-        text-decoration: none;
-    }
+.navbar {
+    background: #32366C;
 }
 
 .nav {

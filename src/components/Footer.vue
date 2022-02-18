@@ -3,10 +3,13 @@
 
 <script>
     export default {
+        components: {
+
+        },
         name: 'foot',
         data() {
             return {
-             };
+            };
         }
 
     };

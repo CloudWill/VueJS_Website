@@ -1,4 +1,4 @@
-# lawn_website
+# Front End Website Example
 
 ## Project setup
 ```

@@ -1,0 +1,14 @@
+
+.nav {
+    a.router-link-active {
+        background: #32366C;
+        padding: 15px;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
+}

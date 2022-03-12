@@ -1,0 +1,25 @@
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+    
+}
+
+/* footer styling */
+#footer {
+    text-align: center;
+    height: 58px;
+    position: relative;
+    bottom: 0px;
+    
+}
+
+#footer a{
+    padding: 10px;
+}
+
+
+#footer *:hover {
+        color: #008000;
+    }
+

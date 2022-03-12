@@ -1,0 +1,59 @@
+<div>
+
+      <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+            <div class="contact">
+                <div class="phone"><i class="fas fa-phone-square-alt"></i>&nbsp;{{ phoneNumber }}</div>
+                <div class="email"><i class="fas fa-envelope"></i>&nbsp;{{ email }}</div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="canvasfor-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=vancouver&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlehtml" rel="nofollow" href="https://sucks.hosting" id="make-mapinformation">Hosting Sucks</a></div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <!-- Left contact page -->
+
+                    <form id="contact-form" class="form-horizontal" role="form">
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                            </div>
+                        </div>
+
+                        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+                        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                            <div class="alt-send-button">
+                                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                            </div>
+
+                        </button>
+
+                    </form>
+
+                    <!-- Left contact page -->
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+</div>

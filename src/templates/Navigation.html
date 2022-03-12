@@ -1,0 +1,29 @@
+<div>
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+
+        <div class="container">
+            <div class="nav_title">
+                <router-link tag="li" class="navbar-brand" :to="{ name: 'Home' }"><img :src="require('../assets/img/generic_lawn_logo.png')" /></router-link>
+            </div>
+            <div class="contact">
+                <div class="phone"><i class="fas fa-phone-square-alt"></i>&nbsp;{{ this.$parent.phoneNumber }}</div>
+                <div class="email"><i class="fas fa-envelope"></i>&nbsp;{{ this.$parent.email }}</div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <router-link tag="li" class="nav__item" :to="{ name: 'Home' }">Home</router-link>
+                    <router-link tag="li" class="nav__item" :to="{ name: 'Services' }">Services</router-link>
+                    <router-link tag="li" class="nav__item" :to="{ name: 'Portfolio' }">Portfolio</router-link>
+                    <router-link tag="li" class="nav__item" :to="{ name: 'About Us' }">About Us</router-link>
+                    <router-link tag="li" class="nav__item" :to="{ name: 'Contact Us' }">Contact Us</router-link>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+</div>

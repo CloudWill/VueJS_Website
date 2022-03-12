@@ -1,0 +1,42 @@
+
+.nav_title {
+    display: flex;
+    width: 15%;
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+.navbar-toggler {
+    color: white;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    .email{
+        padding-left: 20px;
+    }
+}
+
+.navbar {
+    background: #32366C;
+}
+
+.nav {
+    a.router-link-active {
+        background: #32366C;
+        padding: 15px;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
+}

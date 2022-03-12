@@ -1,0 +1,19 @@
+/* about section image css */
+
+#portfolio {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolioContent.card {
+    height: 280px;
+    cursor: pointer;
+    background: #32366C;
+}
+
+
+.card-img-top{
+    height: 100%;
+}
